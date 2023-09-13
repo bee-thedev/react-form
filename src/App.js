@@ -36,7 +36,7 @@ function App() {
 
   function handleSubmit(event){
       event.preventDefault()
-      console.log(formData)
+      console.log("Thanks for signing up for our newsletter!")
   }
 
   return (
