@@ -14,7 +14,8 @@ function App() {
     cool: true,
     rusty: true,
     angel: true,
-    mood: ""
+    mood: "",
+    favFood: ""
   })
 
   console.log(formData)
@@ -33,9 +34,14 @@ function App() {
     })
   }
 
+  function handleSubmit(event){
+      event.preventDefault()
+      console.log(formData)
+  }
+
   return (
     <div> <h2>React Form</h2>
-    <form>
+    <form onSubmit={handleSubmit}>
         <input 
           type="text" 
           placeholder="Enter first name" 
@@ -161,6 +167,18 @@ function App() {
           />
         </label>
         </fieldset>
+
+        <fieldset className="fields">
+        <legend>Select your favourite food</legend>
+        <select name="favFood" id="favFood" onChange={handleChange} value={formData.favFood}>
+          <option value="">--- Choose from options below ---</option>
+          <option value="spaghetti">Spaghetti</option>
+          <option value="noodles">Noodles</option>
+          <option value="steak">Steak</option>
+          <option value="frenchfries">French Fries</option>
+        </select>
+        </fieldset>
+        <button>Submit</button>
     </form>
     </div>
   );

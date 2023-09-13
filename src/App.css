@@ -63,8 +63,10 @@ fieldset{
   flex-direction: column;
   height: auto;
   width:90%;
-  border: 1px solid rgb(22, 17, 17);
   margin-top: 4%;
+  padding:30px; 
+  border:3px solid #808cf8;
+  background: #fafcff;
 }
 
 label{
@@ -76,3 +78,43 @@ label{
     justify-content: space-between;
     align-items: center;
 }
+
+.select-label{
+  display: flex;
+  flex-direction: column;
+  margin-top: 3%;
+  justify-content: flex-start;
+  align-items: center;
+  font-weight: 600px;
+}
+
+select{
+  width: 60%;
+  height: 30px;
+  margin-bottom: 3%;
+}
+
+.fields {
+  padding:30px; 
+  border:3px solid #808cf8;
+  background: #fafcff;
+}
+
+button{
+  margin: 5% 0;
+  background-color: #548fd1; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  }
+  
+  button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  }
